@@ -31,6 +31,6 @@ export function useTableData() {
         count,
         rows,
         isLoading: loading,
-        isError: error,
+        error,
     };
 }

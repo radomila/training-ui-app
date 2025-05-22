@@ -9,7 +9,7 @@ import {LoadingSpinner} from "../../UIComponents/LoadingSpinner";
 import {ErrorAlert} from "../../UIComponents/ErrorAlert";
 
 export function TableScreen() {
-	const { count, rows, isLoading, isError } = useTableData();
+	const { count, rows, isLoading, error } = useTableData();
 
 	const firstPage = 1;
 	const [currentPage, setCurrentPage] = useState(firstPage);
@@ -25,8 +25,8 @@ export function TableScreen() {
 		return <LoadingSpinner />
 	}
 
-	if (isError) {
-		return <ErrorAlert />
+	if (error !== "") {
+		return <ErrorAlert error={error} />
 	}
 
 	return (

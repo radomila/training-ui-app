@@ -11,15 +11,15 @@ import {ErrorAlert} from "../../UIComponents/ErrorAlert";
 
 export function CardsScreen() {
     const { id} = useParams();
-    const { rowDetail, isLoading, isError} = useCardDetailData(id);
+    const { rowDetail, isLoading, error} = useCardDetailData(id);
     const { t } = useTranslation();
 
     if (isLoading) {
         return <LoadingSpinner />
     }
 
-    if (isError) {
-        return <ErrorAlert />
+    if (error !== "") {
+        return <ErrorAlert error={error} />
     }
 
     return (
