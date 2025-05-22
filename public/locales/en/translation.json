@@ -84,7 +84,30 @@
 		"Invalid Date": "Invalid Date"
 	},
 
-	"Training": {
-		"Hello, there is nothing here yet!": "Hello, there is nothing here yet!"
+	"TableScreen": {
+		"Users table": "Users table",
+		"Number of users": "Overall number of users:"
+	},
+
+	"TableTitle": {
+		"Username": "Username",
+		"Email": "Email",
+		"Created": "Created",
+		"Last sign in": "Last sign in",
+		"Address": "Address"
+	},
+
+	"CardDetail": {
+		"Username": "Username",
+		"Created": "Created",
+		"Last sign in": "Last sign in",
+		"Address": "Address",
+		"Phone number": "Phone number",
+		"Ip address": "IP address",
+		"Mac address": "MAC address"
+	},
+
+	"Button": {
+		"Back to table": "Back to table"
 	}
 }

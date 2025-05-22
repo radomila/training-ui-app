@@ -5,7 +5,8 @@ import { Application, I18nModule, AboutModule } from 'asab_webui_shell';
 
 (async function init() {
 	// Dynamically import your module(s)
-	const { default: TableApplicationModule } = await import('./module/index.jsx');
+	const { default: TableApplicationModule } = await import('./module/TableScreen');
+	const { default: CardsScreenApplicationModule } = await import('./module/CardsScreen');
 
 	const config = {
 		title: "TeskaLabs Training UI App",
@@ -43,7 +44,7 @@ import { Application, I18nModule, AboutModule } from 'asab_webui_shell';
 		<HashRouter>
 			<Application
 				configdefaults={config}
-				modules={[I18nModule, AboutModule, TableApplicationModule]}
+				modules={[I18nModule, AboutModule, TableApplicationModule, CardsScreenApplicationModule]}
 			/>
 		</HashRouter>
 	), document.getElementById('app'));

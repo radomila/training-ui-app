@@ -84,7 +84,30 @@
 		"Invalid Date": "Nesprávné datum"
 	},
 
-	"Training": {
-		"Hello, there is nothing here yet!": "Zdravíčko, zatím tu nic není!"
+	"TableScreen": {
+		"Users table": "Tabulka uživatelů",
+		"Number of users": "Celkový počet uživatelů:"
+	},
+
+	"TableTitle": {
+		"Username": "Uživatelské jméno",
+		"Email": "Email",
+		"Created": "Vytvořeno",
+		"Last sign in": "Naposledy přihlášen",
+		"Address": "Adresa"
+	},
+
+	"CardDetail": {
+		"Username": "Uživatelské jméno",
+		"Created": "Vytvořeno",
+		"Last sign in": "Naposledy přihlášen",
+		"Address": "Adresa",
+		"Phone number": "Telefonní číslo",
+		"Ip address": "IP adresa",
+		"Mac address": "MAC adresa"
+	},
+
+	"Button": {
+		"Back to table": "Zpět na tabulku"
 	}
 }

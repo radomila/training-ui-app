@@ -1,0 +1,1 @@
+export const URL = process.env.TESKA_LABS_URL;
