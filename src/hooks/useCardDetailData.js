@@ -5,7 +5,7 @@ import {useLoading} from "./useLoading";
 import {URL} from "../config";
 
 export function useCardDetailData(id) {
-    const [rowDetail, setRowDetail] = useState();
+    const [rowDetail, setRowDetail] = useState({});
     const { loading, setLoading } = useLoading();
     const { error, setError } = useError();
 
