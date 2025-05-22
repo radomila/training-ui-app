@@ -3,7 +3,7 @@ import {Card, CardBody, CardSubtitle, CardTitle, Container} from "reactstrap";
 import {useTranslation} from "react-i18next";
 import {getFormattedKeyName} from "../../utils/getFormattedKeyName";
 import {icons} from "../../../public/media/icons";
-import {DateTime} from "asab_webui_components/dist/components/DateTime/DateTime";
+import {DateTime} from "asab_webui_components";
 
 export function CardDetail({ rowDetail }) {
     const { t } = useTranslation();

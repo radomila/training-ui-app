@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {DateTime} from "asab_webui_components/dist/components/DateTime/DateTime";
 import {TableTitle} from "../../UIComponents/TableTitle";
 import {icons} from "../../../public/media/icons";
+import {DateTime} from "asab_webui_components";
 
 export const columns = [
     {
