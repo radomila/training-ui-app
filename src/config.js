@@ -1,1 +1,1 @@
-export const URL = process.env.REACT_TESKA_LABS_URL;
+export const TESKA_LABS_URL = "https://devtest.teskalabs.com/"

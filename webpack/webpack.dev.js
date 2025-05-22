@@ -2,7 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { merge } = require('webpack-merge');
 const commonConfig = require('./webpack.common');
-const Dotenv = require('dotenv-webpack');
 
 const devConfig = {
 	mode: "development",
@@ -21,8 +20,7 @@ const devConfig = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "../public/index.html")
-		}),
-		new Dotenv()
+		})
 	]
 };
 

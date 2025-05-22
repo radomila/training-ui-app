@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import axios from "axios";
 import {useError} from "./useError";
 import {useLoading} from "./useLoading";
-import {URL} from "../config";
+import {TESKA_LABS_URL} from "../config";
 
 export function useCardDetailData(id) {
     const [rowDetail, setRowDetail] = useState({});
@@ -16,7 +16,7 @@ export function useCardDetailData(id) {
     async function getCardDetailData (){
         setLoading(true);
         try {
-            const response = await axios.get(`${URL}/detail/${id}`);
+            const response = await axios.get(`${TESKA_LABS_URL}/detail/${id}`);
             setRowDetail(response.data);
         } catch (err) {
             setError(err.message);

@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import axios from "axios";
 import {useError} from "./useError";
 import {useLoading} from "./useLoading";
-import {URL} from "../config";
+import {TESKA_LABS_URL} from "../config";
 
 export function useTableData() {
     const [rows, setRows] = useState([]);
@@ -17,7 +17,7 @@ export function useTableData() {
     async function getTableData () {
         setLoading(true);
         try {
-            const response = await axios.get(`${URL}/data`);
+            const response = await axios.get(`${TESKA_LABS_URL}/data`);
             setRows(response.data.data);
             setCount(response.data.count);
         } catch (err) {
